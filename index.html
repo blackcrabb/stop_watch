@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Stop Watch</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 align="center">Stop Watch</h1>
+        <section id="controls">
+            <div class="input-group">
+                <label for="minutes-input" style="color: white;">Minutes</label>
+                &nbsp;<input type="number" placeholder="0" id="minutes-input" max="300" min="0"> 
+            </div>
+
+            <div class="input-group">
+                <label for="seconds-input" style="color: white;">Seconds</label>
+                &nbsp;<input type="number" placeholder="00" id="seconds-input" max="60" min="0" step="5" >
+            </div>
+
+            <button type="button" id="start-button" onclick="startTimer();">Start</button>
+            <button type="button" id="stop-button" onclick="stopTimer();" disabled>Stop</button>
+            <button type="button" id="pause-button" onclick="pauseTimer();" disabled>Pause</button>
+
+        </section>
+
+        <h2><span id="minutes" style="color: white;" >0</span><span style="color: white;">:</span> <span id="seconds" style="color: white;">00</span></h2>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
